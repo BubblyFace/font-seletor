@@ -11,6 +11,7 @@ ot.load('./test/font/FZLTCHJW.TTF', function(err, font) {
   } else {
     const ps = handleInput(path.join(process.cwd(), INPUT_FILE));
     const dict = getDict(font);
+
     function saveFont (fileContent) {
       let _glyphs = []
       fileContent.toString().split('').forEach(char => {
@@ -27,7 +28,11 @@ ot.load('./test/font/FZLTCHJW.TTF', function(err, font) {
         descender: -200,
         glyphs: _glyphs
       })
-      _newFont.download();
+      try{
+        _newFont.download();
+      } catch(e) {
+        console.error(e)
+      }
     }
 
     ps.then(saveFont)
