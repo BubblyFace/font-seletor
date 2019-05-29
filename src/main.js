@@ -2,7 +2,7 @@ const ot = require("opentype.js");
 const path = require('path');
 
 const handleInput = require('../utils/handle_input');
-const getDict = require('../utils/getDict.js');
+const getDict = require('../utils/get_dict.js');
 
 module.exports = function(options) {
   let [fontPath, inputPath, savePath] = options;

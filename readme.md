@@ -1,3 +1,3 @@
 # Font Selector
 
-`npm run test`
+`npm run test`:q
