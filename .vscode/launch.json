@@ -9,7 +9,12 @@
       "request": "launch",
       "name": "dev_debug",
       "program": "${workspaceFolder}/index.js",
-      "console": "integratedTerminal"
+      "console": "integratedTerminal",
+      "args": [
+        "./test/font/HYYakuHei-Medium.otf",
+        "input", 
+        "output/test"
+      ]
     }
   ]
 }
