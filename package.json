@@ -4,7 +4,7 @@
   "description": "A selector to get part font-obj from a big font-body",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js ./test/font/HYYakuHei-75W.ttf input output/HYYakuHei"
+    "test": "node index.js ./test/font/Skia.ttf input output/HYYakuHei"
   },
   "author": "bubblyface",
   "license": "ISC",
